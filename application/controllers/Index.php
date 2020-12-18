@@ -10,9 +10,9 @@ class Index extends CI_Controller {
 	public function index()
 	{	
 		$this->load->model('Index_model');
-		$homePageVideo = $this->Index_model->GetHomePageVideo();
+		//$homePageVideo = $this->Index_model->GetHomePageVideo();
 		$homePagePoster = $this->Index_model->GetHomePagePoster();
-		//$data = array('homePageVideo' => $homePageVideo, 'homePagePoster' => $homePagePoster);
+		$data = array('homePageVideo' => $homePageVideo, 'homePagePoster' => $homePagePoster);
 		$this->load->view('homePage_view',$data,FALSE);
 	}
 	public function UpdateHomePagePoster()
