@@ -1,1 +1,0 @@
-<button id="btn-check_order" class="btn btn-product">Xem đơn hàng</button>
