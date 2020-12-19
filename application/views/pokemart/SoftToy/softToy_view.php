@@ -1,4 +1,4 @@
-<!-- <div class="box-show_thubong row no-gutters">
+<div class="box-show_thubong row no-gutters">
 	<?php foreach ($arProduct as $key => $value): ?>
 		<div class="col c-12 m-4 l-3 l-5nam">
 			<div class="thubong">
@@ -24,7 +24,7 @@
 			</div>
 		</div>
 	<?php endforeach ?>
-</div> -->
+</div>
 <script>
 	if (document.querySelectorAll('.addcart')) {
 		var addcart = document.querySelectorAll('.addcart').forEach( function(element, index) {
