@@ -140,10 +140,10 @@ class SoftToy extends CI_Controller {
 					$arDetailMore['priceSum'] += $value['price'];
 					$arDetailMore['amoutProduct'] += 1;
 				}
-			} //else {
-				//$arDetailMore['priceSum'] += $value['price'];
-				//$arDetailMore['amoutProduct'] += 1;
-			//}
+			} else {
+				$arDetailMore['priceSum'] += $value['price'];
+				$arDetailMore['amoutProduct'] += 1;
+			}
 		}
 		$data = array('arDetail' => $arDetail,'arDetailMore' => $arDetailMore);
 		$this->load->view('pokemart/SoftToy/userCart_view',$data,FALSE);
